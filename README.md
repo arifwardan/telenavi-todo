@@ -48,23 +48,22 @@ GET /api/todos
 
 #### **Contoh Request**
 ```
-GET /api/todos?status=pending&priority=high
+GET /api/todos
 ```
 #### **Contoh Response**
 ```json
-{
-  "todos": [
+[
     {
-      "id": 1,
-      "title": "Develop Laravel API",
-      "assignee": "Alice Johnson",
-      "due_date": "2025-04-10",
-      "time_tracked": 120,
-      "status": "pending",
-      "priority": "high"
+        "id": 1,
+        "title": "Develop Laravel API",
+        "assignee": "Alice Johnson",
+        "due_date": "2025-04-10",
+        "time_tracked": 120,
+        "status": "pending",
+        "priority": "high"
     }
-  ]
-}
+]
+
 ```
 
 ### **2. Export Excel Report**
